@@ -7,6 +7,7 @@ import imgIsta from "../../assets/images/instagram.svg";
 import imgLinke from "../../assets/images/linkedin.svg";
 
 
+
 function ListaServicos() {
     return (
         <div>
@@ -108,7 +109,7 @@ function ListaServicos() {
                                         <li>Cadastrar Desenvolvedor</li>
                                     </ul>
                                 </div>
-                                <img src="../img/logo.svg" alt=""/>
+                                <img src={imglogo} alt=""/>
                                     <div className="rodape_conteudo_contatos">
                                         <h2>Contatos</h2>
                                         <div>
