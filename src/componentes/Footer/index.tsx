@@ -7,6 +7,8 @@ import imgLinke from "../../assets/images/linkedin.svg";
 //estilizacao
 import "./style.css"
 
+import { Link } from "react-router-dom"
+
 function Footer() {
     return (
         //codigo Footer
@@ -35,11 +37,11 @@ function Footer() {
                     <div className="rodape_conteudo_contatos">
                         <h2>Contatos</h2>
                         <div>
-                            <a href="#"><img src={imgFace} alt="" /></a>
-                            <a href="#"><img src={imgIsta} alt="" /></a>
-                            <a href="#"><img src={imgLinke} alt="" /></a>
+                            <Link to={"#"}> <img src={imgFace} alt=""/></Link>
+                            <Link to={"#"}> <img src={imgIsta} alt=""/></Link>
+                            <Link to={"#"}> <img src={imgLinke} alt=""/></Link>
                         </div>
-                        <a href="mailto:">contato@vsconnect.com</a>
+                        <Link to= "mailto:">contato@vsconnect.com</Link>
                     </div>
                 </div>
                 <p>todos os direitos reservados ©.</p>

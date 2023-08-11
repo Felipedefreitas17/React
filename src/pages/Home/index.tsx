@@ -5,6 +5,8 @@ import imgClientes from "../../assets/images/clientes.png";
 import imgAlfinete from "../../assets/images/alfinete.png";
 import imgMaosDev from "../../assets/images/maos_dev.png";
 
+import { Link } from "react-router-dom"
+
 
 function Home() {
 
@@ -20,8 +22,8 @@ function Home() {
                             oportunidades.</p>
                         <p className="banner_slogan_l3">Conecte-se e comece a desvendar esse mundo!</p>
                         <div className="banner_botoes">
-                            <a className="botao banner_botao_dev" href="#">desenvolvedor</a>
-                            <a className="botao banner_botao_cli" href="#">cliente</a>
+                            <Link to={"#"}className="botao banner_botao_dev">desenvolvedor</Link>
+                            <Link to={"#"} className="botao banner_botao_cli">cliente</Link>
                         </div>
                     </div>
                 </section>
@@ -52,7 +54,7 @@ function Home() {
                             <li>divulgar suas hardskills</li>
                         </ul>
                         <div>
-                            <a className="botao clientes_botao_devs" href="#">criar conta</a>
+                            <Link className="botao clientes_botao_devs" to="#">criar conta</Link>
                         </div>
                     </div>
                     <img src={imgMaosDev} alt="" />
@@ -75,7 +77,7 @@ function Home() {
                             <p>Proposta: R$750,00</p>
                         </div>
                     </div>
-                    <a href="#">Ver mais serviços</a>
+                    <Link to="#">Ver mais serviços</Link>
                 </section>
             </main>
 
