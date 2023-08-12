@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 //componentes
 import Home from './pages/Home/';
 import ListaServicos from './pages/ListaServicos';
+import ListaDevs from './pages/ListaDevs';
 import Footer from './componentes/Footer';
 import Header from './componentes/Header';
 
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='ListaServicos' element={<ListaServicos />} />
+        <Route path='ListaDevs' element={<ListaDevs />} />
       </Routes>
       <Footer />
     </BrowserRouter>
